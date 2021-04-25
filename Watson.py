@@ -29,8 +29,10 @@ einkaufsliste = [""]
 wikipedia.set_lang("de")
 #board = pyfirmata.Arduino('COM3')
 warnings.filterwarnings('ignore')
-url = "https://api.eu-de.text-to-speech.watson.cloud.ibm.com/instances/7f8ae6b6-3f70-4efd-87c0-d87e15420c98"
-api = IAMAuthenticator("WHB7FmkQRtBDkFYDawIWyl63NZZZZXhy5IJOduBj339e")
+
+#get token and URl from IBM Cloud
+url = "YOUR_URL"
+api = IAMAuthenticator("YOUR_TOKEN")
 
 
 txt2sp = TextToSpeechV1(authenticator=api)
